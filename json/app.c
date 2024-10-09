@@ -4,7 +4,7 @@
 #include "json.h"
 
 int main() {
-    char path[] = "/Users/zacharythornton/Desktop/c/json/data.json";
+    char path[] = "data.json";
     char element[20];
     printf("what element would you like the value of\n");
 
