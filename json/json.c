@@ -25,15 +25,12 @@ const char* type(char filepath[], char element[]){
                 strcpy(type, "object");
             } else {
                 strcpy(type, "int");
-                
-                // this doesn't work right now
                 // if the string of characters has a . then it should be a float
                 for (int i = 0; i < strlen(characters); i++){
-                    if (*characters + i == '.'){
+                    if (characters[i] == '.'){
                         strcpy(type, "float");
                     }
                 }
-                // still returning int even if there is a . in the characters string ??
             }
         }
     }
